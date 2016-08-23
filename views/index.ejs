@@ -18,7 +18,7 @@
 		-->
 		<!-- Lato font -->
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900' type='text/css'/>
-
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|PT+Sans|PT+Serif|Raleway|Rokkitt|Satisfy|Source+Sans+Pro" rel="stylesheet"/>
 		<!-- jQuery -->
 		<script src='../javascripts/jquery.min.js' type='text/javascript'></script>
 		<!-- Bootstrap JS -->
@@ -35,13 +35,28 @@
 		<style>
 		/* General page styles */
 		html, body {
-			background: black;
-			font: 300 22px/150% 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+			background-image: url("../images/wallpapers/graf.jpg");
+			font: 300 22px/150% 'Raleway', 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
 			height: 100%;
 			min-height: 100%;
 			max-width: 100%;
 			padding-top: 25px;
 			line-height: 150%;
+		}
+		/* Header font styles */
+		h1, h2, h3, h4, h5, nav li, cite {
+			font-family: 'Raleway';
+		}
+		p {
+			font-family: 'Rokkitt';
+			font-size: 17px;
+			line-height: 120%;
+		}
+		h3 {
+			color : black;
+		}
+		nav li {
+			font-size: 16px;
 		}
 		/* Adjust navbar height */
 		.navbar-nav > li > a {
@@ -65,9 +80,13 @@
 			border-radius: 5px;
 			max-width: 100%;
 		}
-
+		/* COLORS
+		carrot #EAC67A\
+		dark purple #0E0B16
+		violet 
+		*/
 		.topic p {
-			color: #888;
+			color: black;
 		}
 		/* Remove underlines from links */
 		a, a:hover, a:visited {
@@ -116,45 +135,47 @@
 
 
 	<body ng-app='sleeplessApp'>
+		<div class='container'>
 
+			<!-- Navigation bar -->
+			<nav class='navbar navbar-inverse navbar-fixed-top'>
+				<div class='container-fluid container'>
 
-		<!-- Navigation bar -->
-		<nav class='navbar navbar-inverse navbar-fixed-top'>
-			<div class='container-fluid container'>
+					<div class='navbar-header'>
+				      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#siteNav'>
+				        <span class='icon-bar'></span>
+				        <span class='icon-bar'></span>
+				        <span class='icon-bar'></span> 
+				      </button>
+				      <a class='navbar-brand text-uppercase' href='#/home' style='margin-top: 15px; font-size: 25px; color: white'>sleepless</a>
+				    </div>
+				    <div class='collapse navbar-collapse' id='siteNav'>
+						<ul class='nav navbar-nav navbar-right'>
+							<li class='active'><a href='#/home'>Home</a></li>
+							<li><a href='#/members'>Members</a></li>
+							<li><a href='#/footage'>Footage</a></li>
+							<li><a href='#/contact'>Contact Info</a></li>
+						</ul>
+					</div>
 
-				<div class='navbar-header'>
-			      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#siteNav'>
-			        <span class='icon-bar'></span>
-			        <span class='icon-bar'></span>
-			        <span class='icon-bar'></span> 
-			      </button>
-			      <a class='navbar-brand text-uppercase' href='#/home' style='margin-top: 15px; font-size: 25px; color: white'>sleepless</a>
-			    </div>
-			    <div class='collapse navbar-collapse' id='siteNav'>
-					<ul class='nav navbar-nav navbar-right'>
-						<li class='active'><a href='#/home'>Home</a></li>
-						<li><a href='#/members'>Members</a></li>
-						<li><a href='#/footage'>Footage</a></li>
-						<li><a href='#/contact'>Contact Info</a></li>
-					</ul>
 				</div>
+			</nav>
 
-			</div>
-		</nav>
+			<!-- Page content here -->
+			<div style='background: white' ui-view></div>
 
-		<!-- Page content here -->
-		<div style='background: white' ui-view></div>
+			<!-- Footer --> 
+			<footer class='footer' style='background: white'>
+				<!-- Copyright -->
+				<div class='row container' style='color: #E8E8E8; padding: 10px 55px;'>
+					<hr/>
+					<cite class='pull-right' style='font-size: 15px; margin-right: 22px; color: black'>
+						&copy;&nbsp;Sleepless 2016
+					</cite>
+				</div>
+			</footer>
 
-		<!-- Footer --> 
-		<footer class='footer' style='background: black'>
-			<!-- Copyright -->
-			<div class='container' style='padding-top: 16px; padding-bottom: 16px; color: #E8E8E8'>
-				<cite class='pull-right'>
-					&copy;&nbsp;Sleepless
-				</cite>
-			</div>
-		</footer>
-
+		</div>
 
 	</body>
 </html>
