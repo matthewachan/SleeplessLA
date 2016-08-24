@@ -1,8 +1,159 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* General page styles */
+html, body {
+	display: block;
+	background-image: url("../images/wallpapers/graf.jpg");
+	font: 300 22px/150% 'Raleway', 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+	height: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	padding-top: 25px;
+	line-height: 150%;
+}
+section {
+	display: block;
+	position: static;
+	margin: 0;
+	padding: 0;
+}
+section h2 {
+	font-family: 'Permanent Marker';
+}
+p {
+	display: block;
+	position: static;
+	font-family: 'Raleway';
+	font-size: 18px;
+	line-height: 130%;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 5em;
+	padding: 0;
 }
 
-a {
-  color: #00B7FF;
+
+/* Banner styles */
+.banner-wrap {
+	overflow: hidden; 
+	height: 400px;
+	width: 100%; 
+	position: relative;
+}
+.banner-wrap img {
+	width: 100%; 
+	position: absolute;
+}
+.banner-header {
+	font-size: 55px; 
+	font-family: "Permanent Marker";
+}
+.banner-header-wrap {
+position: relative; 
+margin-top: 6%; 
+padding-bottom: 6%; 
+color: black;
+}
+
+
+/* Header font styles */
+h1, h2, h3, h4, h5, nav li, cite {
+	font-family: 'Raleway';
+}
+
+
+/* Navbar settings */
+.navbar-nav > li > a {
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+.navbar {
+	min-height: 80px !important;
+	font-size: 20px;
+}
+nav li {
+	font-size: 16px;
+}
+
+
+/* Image blur settings */
+.blur {
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+
+/* Main page topic formatting */
+.topic {
+	padding: 0 88px;
+}
+.topic img {
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.topic-img-wrap {
+	margin-top: 44px; 
+	text-align: center;
+}
+.topic p {
+	color: black;
+}
+.topic-padding {
+	padding: 2% 0;
+}
+
+
+/* Remove underlines from links */
+a, a:hover, a:visited {
+	text-decoration: none !important;
+	color: black;
+}
+a:hover {
+	color: #888;
+	border-color: #888;
+}
+
+
+/* Member card settings */
+.img-wrap {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.img-wrap img {
+	border-radius: 0;
+}
+.img-description {
+	position: absolute;
+	text-align: center;
+	padding-top: 105px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.4);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	font-family: 'Raleway';
+	font-weight: 800;
+/*remove comment if you want a gradual transition between states
+-webkit-transition: visibility opacity 0.2s;
+*/
+}
+.img-wrap:hover .img-description {
+	visibility: visible;
+	opacity: 1;
+}
+.img-row-wrap {
+	height: 250px; 
+	overflow: hidden;
 }
