@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang='en-US'>
-	<head>
-		<title>Sleepless</title>
-		<meta charset='utf-8'/>
-		<!-- Website description -->
-		<meta name='description' content=''/>
-		<meta name='author' content='Matthew Chan'/>
-		<meta name='keywords' content=''/>
-		<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-		<meta name='viewport' content='width=device-width; initial-scale=1.0;'/>
+<head>
+	<title>Sleepless</title>
+	<meta charset='utf-8'/>
+	<!-- Website description -->
+	<meta name='description' content=''/>
+	<meta name='author' content='Matthew Chan'/>
+	<meta name='keywords' content=''/>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+	<meta name='viewport' content='width=device-width; initial-scale=1.0;'/>
 
 
-		<!-- Bootstrap CSS -->
-		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' type='text/css'/>
-		<!-- Custom CSS styles 
+	<!-- Bootstrap CSS -->
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' type='text/css'/>
+		<!-- Custom CSS styles
 		<link rel='stylesheet' href='stylesheets/stylesheet.css' type='text/css'/>
-		-->
-		<!-- Lato font -->
-		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900' type='text/css'/>
-		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|PT+Sans|PT+Serif|Raleway|Rokkitt|Satisfy|Source+Sans+Pro" rel="stylesheet"/>
-		<!-- jQuery -->
-		<script src='../javascripts/jquery.min.js' type='text/javascript'></script>
-		<!-- Bootstrap JS -->
-		<script src='../javascripts/bootstrap.min.js' type='text/javascript'></script>
-		<!-- AngularJS -->
-		<script src='../javascripts/angular.min.js' type='text/javascript'></script>
-		<!-- AngularJS UI Router -->
-		<script src='../javascripts/angular-ui-router.min.js' type='text/javascript'></script>
-		<!-- Custom Angular Application -->
-		<script src='../javascripts/sleeplessApp.js' type='text/javascript'></script>
-		
+	-->
+	<!-- Lato font -->
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900' type='text/css'/>
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|PT+Sans|PT+Serif|Raleway|Rokkitt|Satisfy|Source+Sans+Pro|Permanent+Marker" rel="stylesheet"/>
+	<!-- jQuery -->
+	<script src='../javascripts/jquery.min.js' type='text/javascript'></script>
+	<!-- Bootstrap JS -->
+	<script src='../javascripts/bootstrap.min.js' type='text/javascript'></script>
+	<!-- AngularJS -->
+	<script src='../javascripts/angular.min.js' type='text/javascript'></script>
+	<!-- AngularJS UI Router -->
+	<script src='../javascripts/angular-ui-router.min.js' type='text/javascript'></script>
+	<!-- Custom Angular Application -->
+	<script src='../javascripts/sleeplessApp.js' type='text/javascript'></script>
 
-		<!-- Custom styles -->
-		<style>
+
+	<!-- Custom styles -->
+	<style>
 		/* General page styles */
 		html, body {
 			background-image: url("../images/wallpapers/graf.jpg");
@@ -47,20 +47,39 @@
 		h1, h2, h3, h4, h5, nav li, cite {
 			font-family: 'Raleway';
 		}
+		section h2 {
+			font-family: 'Permanent Marker';
+		}
 		p {
-			font-family: 'Rokkitt';
-			font-size: 17px;
-			line-height: 120%;
+			font-family: 'Raleway';
+			font-size: 18px;
+			line-height: 130%;
 		}
 		h3 {
 			color : black;
+		}
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid #ccc;
+			margin: 1em 0;
+			padding: 0;
+		}
+		/* COLORS
+		carrot #EAC67A\
+		dark purple #0E0B16
+		violet
+		*/
+		.topic p {
+			color: black;
 		}
 		nav li {
 			font-size: 16px;
 		}
 		/* Adjust navbar height */
 		.navbar-nav > li > a {
-			padding-top: 30px !important; 
+			padding-top: 30px !important;
 			padding-bottom: 30px !important;
 		}
 		.navbar {
@@ -71,22 +90,14 @@
 		.blur {
 			filter: blur(8px);
 			-webkit-filter: blur(8px);
-			-moz-filter: blur(5px); 
-			-o-filter: blur(5px); 
-			-ms-filter: blur(5px); 
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
 		}
 		/* Main page topic formatting */
 		.topic img {
 			border-radius: 5px;
 			max-width: 100%;
-		}
-		/* COLORS
-		carrot #EAC67A\
-		dark purple #0E0B16
-		violet 
-		*/
-		.topic p {
-			color: black;
 		}
 		/* Remove underlines from links */
 		a, a:hover, a:visited {
@@ -100,12 +111,12 @@
 		}
 		/* Contact card styling */
 		.bio {
-		  border: 1px solid #888;
-		  border-radius: 5px;
-		  padding-bottom: 22px;
-		  text-align: center;
-		  margin-top: 66px;
-		  width: 100%;
+			border: 1px solid #888;
+			border-radius: 5px;
+			padding-bottom: 22px;
+			text-align: center;
+			margin-top: 66px;
+			width: 100%;
 		}
 		.bio ul {
 			text-align: center;
@@ -113,11 +124,11 @@
 			padding: 0;
 		}
 		.bio img {
-		  width: 130px;
-		  height: 130px;
-		  border-radius: 50%;
-		  border: 1px solid #888;
-		  margin: -66px 0 5px 0;
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			border: 1px solid #888;
+			margin: -66px 0 5px 0;
 		}
 		.description h3 {
 			text-transform: uppercase;
@@ -129,53 +140,89 @@
 			font-size: 20px;
 		}
 
-		</style>
+		.img-wrap {
+			position: relative;
+			float: left;
+			overflow: hidden;
+		}
 
-	</head>
+		.img-description {
+			position: absolute;
+			text-align: center;
+			padding-top: 105px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(255, 255, 255, 0.4);
+			color: #fff;
+			visibility: hidden;
+			opacity: 0;
+			font-family: 'Raleway';
+			font-weight: 800;
+		  /*remove comment if you want a gradual transition between states
+		  -webkit-transition: visibility opacity 0.2s;
+		  */
+		}
+		.img-wrap:hover .img-description {
+			visibility: visible;
+			opacity: 1;
+		}
+	</style>
+
+</head>
+
+<script>
+	$(document).ready(function() {
+		$(".navbar-right li").on("click", function() {
+			$(".nav li").removeClass("active");
+			$(this).addClass("active");
+		});
+	})
 
 
-	<body ng-app='sleeplessApp'>
-		<div class='container'>
+</script>
 
-			<!-- Navigation bar -->
-			<nav class='navbar navbar-inverse navbar-fixed-top'>
-				<div class='container-fluid container'>
+<body ng-app='sleeplessApp'>
+	<div class='container'>
 
-					<div class='navbar-header'>
-				      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#siteNav'>
-				        <span class='icon-bar'></span>
-				        <span class='icon-bar'></span>
-				        <span class='icon-bar'></span> 
-				      </button>
-				      <a class='navbar-brand text-uppercase' href='#/home' style='margin-top: 15px; font-size: 25px; color: white'>sleepless</a>
-				    </div>
-				    <div class='collapse navbar-collapse' id='siteNav'>
-						<ul class='nav navbar-nav navbar-right'>
-							<li class='active'><a href='#/home'>Home</a></li>
-							<li><a href='#/members'>Members</a></li>
-							<li><a href='#/footage'>Footage</a></li>
-							<li><a href='#/contact'>Contact Info</a></li>
-						</ul>
-					</div>
+		<!-- Navigation bar -->
+		<nav class='navbar navbar-inverse navbar-fixed-top'>
+			<div class='container-fluid container'>
 
+				<div class='navbar-header'>
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#siteNav'>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+					<a class='navbar-brand text-uppercase' href='#/home' style='margin-top: 15px; font-size: 25px; color: white'>sleepless</a>
 				</div>
-			</nav>
-
-			<!-- Page content here -->
-			<div style='background: white' ui-view></div>
-
-			<!-- Footer --> 
-			<footer class='footer' style='background: white'>
-				<!-- Copyright -->
-				<div class='row container' style='color: #E8E8E8; padding: 10px 55px;'>
-					<hr/>
-					<cite class='pull-right' style='font-size: 15px; margin-right: 22px; color: black'>
-						&copy;&nbsp;Sleepless 2016
-					</cite>
+				<div class='collapse navbar-collapse' id='siteNav'>
+					<ul class='nav navbar-nav navbar-right'>
+						<li class='active'><a href='#/home'>Home</a></li>
+						<li><a href='#/footage'>Footage</a></li>
+						<li><a href='#/contact'>Contact</a></li>
+					</ul>
 				</div>
-			</footer>
 
-		</div>
+			</div>
+		</nav>
 
-	</body>
+		<!-- Page content here -->
+		<div style='background: #f5f0f0' ui-view></div>
+
+		<!-- Footer -->
+		<footer class='footer' style='background: #1C1C1C'>
+			<!-- Copyright -->
+			<div class='row container' style='color: #E8E8E8; padding: 10px 55px;'>
+				<cite class='pull-right' style='font-size: 15px; margin-right: 22px; color: gray'>
+					&copy;&nbsp;Sleepless 2016
+				</cite>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
 </html>
