@@ -1,3 +1,81 @@
+/* Media breakpoints */
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+	.banner-wrap {
+		min-height: 175px;
+		max-height: 200px;
+	}
+	.banner-header-wrap {
+		padding-top: 6%; 
+	}
+	
+	#show-reel {
+		max-height: 300px;
+	}
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) { 
+	.banner-wrap {
+		min-height: 200px;
+		max-height: 250px;
+	}
+	.banner-header-wrap {
+		padding-top: 6%; 
+	}
+		#show-reel {
+		max-height: 300px;
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+	.banner-wrap {
+		max-height: 300px;
+	}
+	.banner-header-wrap {
+		padding: 0; 
+	}
+		#show-reel {
+		min-height: 450px;
+	}
+}
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+	.banner-wrap {
+		max-height: 400px;
+	}
+	.banner-header-wrap {
+		padding: 0; 
+	}
+		#show-reel {
+		min-height: 500px;
+	}
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+	.banner-wrap {
+		max-height: 400px;
+	}
+	.banner-header-wrap {
+		padding: 0; 
+	}
+		#show-reel {
+		min-height: 550px;
+	}
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+	.banner-wrap {
+		height: 400px;
+	}
+	.banner-header-wrap {
+		padding: 0; 
+	}
+		#show-reel {
+		min-height: 550px;
+	}
+}
+
 /* General page styles */
 html, body {
 	display: block;
@@ -45,16 +123,17 @@ hr {
 .banner-wrap img {
 	width: 100%; 
 	position: absolute;
+	height: auto;
 }
 .banner-header {
 	font-size: 55px; 
 	font-family: "Permanent Marker";
 }
 .banner-header-wrap {
-position: relative; 
-margin-top: 6%; 
-padding-bottom: 6%; 
-color: black;
+	position: relative; 
+	margin-top: 6%; 
+	padding-bottom: 6%; 
+	color: black;
 }
 
 
@@ -76,7 +155,10 @@ h1, h2, h3, h4, h5, nav li, cite {
 nav li {
 	font-size: 16px;
 }
-
+.navbar-toggle {
+	position: static;
+	margin-top: 20px;
+}
 
 /* Image blur settings */
 .blur {
@@ -103,6 +185,8 @@ nav li {
 }
 .topic-img-wrap img {
 	height: 22em;
+	width: 100%;
+	height: auto;
 }
 .topic p {
 	color: black;
@@ -130,14 +214,19 @@ a:hover {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	height: auto;
 }
 .img-wrap img {
+	display: block;
 	border-radius: 0;
+	width: 100%;
+	height: auto;
 }
 .img-description {
 	position: absolute;
 	text-align: center;
-	padding-top: 105px;
+	margin: 0;
+	padding-top: 40%;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -157,6 +246,6 @@ a:hover {
 	opacity: 1;
 }
 .img-row-wrap {
-	height: 250px; 
+	height: auto; 
 	overflow: hidden;
 }
