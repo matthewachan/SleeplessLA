@@ -101,6 +101,9 @@ nav li {
 	margin-top: 44px; 
 	text-align: center;
 }
+.topic-img-wrap img {
+	height: 22em;
+}
 .topic p {
 	color: black;
 }
